@@ -1,0 +1,12 @@
+dist
+.git
+.gitignore
+.dockerignore
+coverage
+.vscode
+.env.local
+*.log
+.DS_Store
+node_modules
+npm-debug.log*
+docker-compose.override.yml
