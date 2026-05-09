@@ -38,6 +38,12 @@ export default defineConfig({
 				'test/',
 				'**/*.d.ts',
 				'**/*.config.*',
+				'src/app.ts',
+				'src/env.ts',
+				'src/error.ts',
+				'src/index.ts',
+				'src/log.ts',
+				'src/register.ts',
 			],
 		},
 

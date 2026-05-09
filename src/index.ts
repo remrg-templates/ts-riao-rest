@@ -1,1 +1,10 @@
-// {{ remrg:task Export the main functionality of the lib/app here }}
+/**
+ * This file is the main entrypoint for your application.
+ */
+import { bootstrap } from './app';
+import { main } from './main';
+
+/**
+ * Bootstrap the application
+ */
+bootstrap(main);

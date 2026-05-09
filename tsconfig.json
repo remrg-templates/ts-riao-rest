@@ -3,8 +3,8 @@
 		"rootDir": "./",
 		"outDir": "./dist",
 		"target": "es2022",
-		"module": "ESNext",
-		"moduleResolution": "bundler",
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
 		"skipLibCheck": true,
 		"esModuleInterop": true,
 		"resolveJsonModule": true,
@@ -17,11 +17,13 @@
 		"noImplicitOverride": true,
 		"noImplicitReturns": true,
 		"useUnknownInCatchVariables": true,
-		"types": [],
+		"noEmit": true,
+		"incremental": true,
+		"types": ["node"],
 		"paths": {
 			"@/*": ["./src/*"]
 		}
 	},
-	"include": ["src", "test", "vitest.config.ts"],
+	"include": ["scripts", "src", "test", "vitest.config.ts"],
 	"exclude": ["node_modules", "dist"]
 }
