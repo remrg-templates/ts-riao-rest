@@ -7,6 +7,8 @@ export class Environment extends AppConfig {
 	readonly APP_TITLE = '{{ remrg:var project-name }}';
 
 	readonly MAIN_DB_NAME: string = 'database/main/main.db';
+
+	readonly API_PORT = 9000;
 }
 
 /**

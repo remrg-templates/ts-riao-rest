@@ -4,6 +4,7 @@ import { Database } from '@riao/dbal';
 import { log } from '@/log';
 import { testEnv } from './test-env';
 import { initTestDb } from './init-test-db';
+import { server } from '@/api/server';
 
 let db: Database;
 
@@ -14,10 +15,14 @@ export async function setup() {
 	db = await initTestDb({
 		testConnectionOptions: { database: testEnv.TEST_DB_NAME },
 	});
+
+	await server.start();
 }
 
 export async function teardown() {
 	// Global teardown
+	await server.stop();
+
 	if (db) {
 		await db.disconnect();
 	}

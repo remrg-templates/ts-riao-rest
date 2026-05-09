@@ -24,10 +24,14 @@
 	"dependencies": {
 		"@riao/dbal": "^3.8.0",
 		"@riao/sqlite": "^3.4.0",
+		"@riao/rest": "^2.1.2",
+		"api-machine": "^1.2.1",
 		"ts-appconfig": "^1.2.0",
 		"ts-async-bootstrap": "^2.1.0",
 		"ts-error-handler": "^1.0.2",
-		"ts-tiny-log": "^1.1.1"
+		"ts-tiny-log": "^1.1.1",
+		"tslib": "^2.8.1",
+		"valsan": "^2.5.0"
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",

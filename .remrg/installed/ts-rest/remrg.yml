@@ -1,0 +1,10 @@
+name: remrg/ts-riao-rest
+track: branch/remrg/v1
+version: 1.0.0
+description: 'Remrg TypeScript @riao/rest API'
+type: feature
+license: MIT
+access: public
+
+roots:
+  - ts-riao
