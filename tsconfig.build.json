@@ -6,5 +6,5 @@
 		"noEmit": false,
 		"types": []
 	},
-	"include": ["src"]
+	"include": ["database", "src"]
 }

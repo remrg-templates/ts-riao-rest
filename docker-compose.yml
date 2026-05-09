@@ -4,5 +4,22 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: '{{ remrg:var project-name }}'
+    depends_on:
+      migration:
+        condition: service_completed_successfully
     environment:
       NODE_ENV: production
+    volumes:
+      - ./database:/app/database
+
+  migration:
+    build:
+      context: .
+      dockerfile: Dockerfile.migration
+    container_name: '{{ remrg:var project-name }}-migration'
+    environment:
+      NODE_ENV: production
+    command: ['npx', 'riao', 'migration:run']
+    restart: 'no'
+    volumes:
+      - ./database:/app/database

@@ -5,6 +5,8 @@ import { AppConfig, configure } from 'ts-appconfig';
  */
 export class Environment extends AppConfig {
 	readonly APP_TITLE = '{{ remrg:var project-name }}';
+
+	readonly MAIN_DB_NAME: string = 'database/main/main.db';
 }
 
 /**

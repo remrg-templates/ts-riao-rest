@@ -39,3 +39,8 @@ scratch/
 
 # remrg
 .remrg/cache
+
+# riao
+*.db
+*.db.env
+database/**/.schema
